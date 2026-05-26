@@ -1,0 +1,12 @@
+.form-3col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+.logo-upload-row { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+.company-logo-preview {
+  width: 72px; height: 72px; border-radius: 14px;
+  background: var(--primary-light); color: var(--primary);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; font-weight: 700; overflow: hidden; flex-shrink: 0;
+  border: 2px solid var(--border);
+}
+.company-logo-preview img { width: 100%; height: 100%; object-fit: contain; }
+@media (max-width: 640px) { .form-3col { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .form-3col { grid-template-columns: 1fr; } }

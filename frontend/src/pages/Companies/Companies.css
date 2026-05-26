@@ -1,0 +1,30 @@
+.companies-header { background: linear-gradient(135deg,#EFF6FF,#DBEAFE); padding: 48px 0 40px; text-align: center; }
+.companies-header h1 { font-family: var(--font-head); font-size: clamp(24px,4vw,40px); font-weight: 800; margin-bottom: 8px; }
+.companies-header p  { color: var(--text-secondary); font-size: 16px; margin-bottom: 24px; }
+.companies-search { display: flex; gap: 10px; max-width: 600px; margin: 0 auto; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-xl); padding: 6px 6px 6px 16px; box-shadow: var(--shadow-md); }
+.companies-search .search-field { display: flex; align-items: center; gap: 8px; flex: 1; }
+.companies-search input { border: none; outline: none; font-size: 14px; width: 100%; }
+
+.companies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 20px; }
+
+.company-card { padding: 24px; display: flex; flex-direction: column; gap: 16px; text-decoration: none; }
+.company-card:hover { transform: translateY(-3px); }
+.company-card-logo {
+  width: 64px; height: 64px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; font-weight: 700; overflow: hidden; flex-shrink: 0;
+}
+.company-card-logo img { width: 100%; height: 100%; object-fit: contain; }
+.company-card-body { display: flex; flex-direction: column; gap: 6px; }
+.company-card-name { font-family: var(--font-head); font-size: 16px; font-weight: 700; color: var(--text-primary); }
+.company-card-industry { font-size: 13px; color: var(--text-secondary); }
+.company-card-location { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--text-muted); }
+.company-card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 4px; }
+.verified-pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--primary-light); color: var(--primary);
+  font-size: 11px; font-weight: 600; padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+.company-website-link { font-size: 13px; color: var(--primary); font-weight: 600; }
+.company-website-link:hover { text-decoration: underline; }
